@@ -18,7 +18,7 @@ It's not an alternative to Puppet, Chef or Ansible. It's purely about building,u
 
 **Terraform is not a library for interacting with your cloud provider**
 
-Terraform is a much higher level abstraction. Libaries like fog will call the api functions of your cloud provider. Terraform, simply requires you to define what your infrastructure looks like across multiple cloud providers using a template/configuration file pattern. There is very little logic and flow control involved.
+Terraform is a much higher level abstraction. Libraries like fog will call the api functions of your cloud provider. Terraform, simply requires you to define what your infrastructure looks like across multiple cloud providers using a template/configuration file pattern. There is very little logic and flow control involved.
 
 **Terraform is not a means to orchestrate application deployment**
 
