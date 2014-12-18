@@ -134,3 +134,6 @@ In Part 2 we'll be building the machine and provisioning it with Ansible.
 
 
 
+### External Links
+
+[http://terraform.io/ ](http://terraform.io/ "terraform") 
