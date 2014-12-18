@@ -49,7 +49,7 @@ Cool, we're ready to go!
 
 ##  Creating the first Terraform configuration
 
-Terraform uses a configuration file which can either have the .tf or .tf.json extension.  As the extension names would imply, terraform understands both json and it's own DSL. However, they are both very similar with .tf being more human readable. So far I haven't seen a good reason to use the .json format, so I will be writing the rest of this post only mentioning the .tf format.
+Terraform uses a configuration file which can either have the .tf or .tf.json extension.  As the extension names would imply, terraform understands both json and it's own DSL. However, they are both very similar except the .tf extension is more human readable. So far I haven't seen a good reason to use the .json format, so I will be writing the rest of this post only mentioning the .tf format.
 
 **Warning! From here on running terraform commands may incur a cost with AWS. Check your free tier eligibility if you don't want to be charged!**
 
