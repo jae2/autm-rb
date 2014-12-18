@@ -1,6 +1,6 @@
 baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
 url: "www.jaetech.org" # the base hostname & protocol for your site.
-title: "Doing things on the internet using a computer"
+title: "James Edwards' blog"
 
 
 paginate: 3 #articles per page
