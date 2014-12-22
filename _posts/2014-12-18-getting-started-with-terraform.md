@@ -1,6 +1,11 @@
 ---
 title: "Provisioning with Terraform Part 1"
-tags: [terraform,provisioning,aws,hashicorp,devops]
+tags: 
+     - terraform
+     - provisioning
+     - aws
+     - hashicorp
+     - devops
 ---
 I've heard a lot of talk about [terraform](http://terraform.io/ "terraform")  recently. I decided it was time for me to see what all the fuss was about. After attending a talk about it, I decided to give it a try! So the next few posts are about my experience of provisioning with terraform, along with some of the pitfalls I encountered along the way. 
 
