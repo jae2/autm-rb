@@ -194,7 +194,7 @@ Our lexer scans the strings in the text. Once it encounters{% raw %}<code>'/*'</
 
 ### Pushing/Popping states
 
-In the above example we change state when we enter  comment mode. Clearly we need a way to exit the state once we encounter{% raw %}<code>'*/'</code>{% endraw %} otherwise we will continue marking things as multiline comment mode. The {% raw %}<code>pop{% endraw %} action will remove the latest state from the stack. Therefore once executed it will stop us working within the 'comment' state and we will go back to 'root'. In our case this is called once we encounter the end of comment symbol. 
+In the above example we change state when we enter  comment mode. Clearly we need a way to exit the state once we encounter{% raw %}<code>'*/'</code>{% endraw %} otherwise we will continue marking things as multiline comment mode. The {% raw %} <code>pop</code> {% endraw %} action will remove the latest state from the stack. Therefore once executed it will stop us working within the 'comment' state and we will go back to 'root'. In our case this is called once we encounter the end of comment symbol. 
 
 Although we now have a way of marking:
 
