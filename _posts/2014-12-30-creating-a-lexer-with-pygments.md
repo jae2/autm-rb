@@ -39,7 +39,7 @@ To development pygments you'll need:
 
  - [Python](https://docs.python.org/) Python 2.7.8 and Python  3.4 seem to work ok. Note that Python 3.X versions less than 3.4 are not supported and as far as I can tell there aren't any plans to support it.
  - [Nose](https://nose.readthedocs.org/en/latest/) (Nicer testing for Python). It looks like the latest version at the time of writing -  1.3.4 works fine.
- - A [Mercurial](mercurial.selenic.com/) client.
+ - A [Mercurial](http://mercurial.selenic.com/) client.
 
 
 We start off by forking and cloning the [Pygments project](https://bitbucket.org/birkenfeld/pygments-main). Be advised, they use Mercurial not Git - so the commands are similar but subtly different in some ways. 
