@@ -6,7 +6,7 @@ tags:
      - pocoo
      - python
      - coding
-     - programming.
+     - programming
 ---
 In my [last]({{ "/getting-started-with-terraform" | prepend:site.baseurl }}) post I added a lot of Terraform code snippets. The syntax of .tf files is similar to JSON, except with less commas and built in functions. In writing the post I naively tried to use JSON syntax highlighting for my code snippets but this didn't come out as I'd hoped. Unfortunately there didn't appear to be a format that would syntax-highlight the configuration file in a nice way. Eventually I settled for using 'console' syntax highlighting which is quite plain and dull. It made me wonder how this was handled and how easy it would be to take care of this functionality myself. I quick bit of Github and Google surfing led me to [Pygments](http://pygments.org/) which is how this is handled in my blog. I decided to have a go at creating a Terraform lexer. I thought I'd document some of my experience of this and give a quick run through of how its done.
 
