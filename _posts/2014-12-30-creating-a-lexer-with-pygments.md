@@ -1,5 +1,5 @@
 ---
-title: "Creating a syntax lexer with Pygments"
+title: "Creating a lexer for syntax highlighting with Pygments"
 tags: 
      - pygments
      - lexer
