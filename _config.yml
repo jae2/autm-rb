@@ -37,3 +37,13 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+mini_magick:
+    small:
+        source: images/
+        destination: images/small/
+        resize: "200x200"
+    medium:
+        source: images/
+        destination: images/medium/
+        resize: "640x480"
