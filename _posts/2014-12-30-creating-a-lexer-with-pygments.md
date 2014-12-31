@@ -27,7 +27,7 @@ I'd have to assume the term 'lexer' comes from the lexical analysis used by comp
 
 1. Lexical analysis - This is the process of dividing the source code into tokens. Which groups of characters make up the keywords? Which groups or single characters are the logical/arithmetic operators?
 2. Syntax analysis - Here we're concerned with the grammatical structure of the tokens. For example in all languages where it exists the if statement has a grammatical structure which is specific for the language. The syntax analysis phase might check for things like attempting to define a variable where an expression is supposed to reside. 
-3. Semantic analysis - What is the actual meaning of it sentence defined by the grammar? From a programming perspective, at this level we might consider areas such as the final state of types after polymorphic operations have been applied.
+3. Semantic analysis - What is the actual meaning of each sentence defined by the grammar? From a programming perspective, at this level we might consider areas such as the final state of types after polymorphic operations have been applied.
 
 Clearly, we predominantly care about lexical analysis. Documentation of some form makes up the main use case for Pygments. It seems like overkill to check our code snippets are semantically correct as often we only want to include a tiny portion. More importantly, we'll often want to give examples of things that are both syntactically and semantically incorrect so we can tell our readers not to do them. That is of course assuming you are a well meaning upstanding member of the software development community! 
 
@@ -35,7 +35,7 @@ Clearly, we predominantly care about lexical analysis. Documentation of some for
 
 ## Setting up your environment
 
-To development pygments you'll need:
+To develop pygments you'll need:
 
  - [Python](https://docs.python.org/) Python 2.7.8 and Python  3.4 seem to work ok. Note that Python 3.X versions less than 3.4 are not supported and as far as I can tell there aren't any plans to support it.
  - [Nose](https://nose.readthedocs.org/en/latest/) (Nicer testing for Python). It looks like the latest version at the time of writing -  1.3.4 works fine.
@@ -244,7 +244,7 @@ Sometimes we'll want to set a number of tokens in a single regular expression. I
        ],
 {% endhighlight %}
 
-The bygroups operator uses each group given by parenthesis and applies the tokens to them in the order of regex is matched.
+The bygroups operator uses each group given by parenthesis and applies the tokens to them in the order the regex is matched.
 
 
 This was a really quick introduction to Pygments lexers, there's far more examples, but the best way to take this further is clone the pygments-main repository and start looking at some of the other lexers. 
