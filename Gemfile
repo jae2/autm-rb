@@ -7,4 +7,7 @@ require 'open-uri'
 gem "jekyll-minimagick"
 versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
-gem 'github-pages', versions['github-pages']
+gem 'github-pages', '33'
+gem 'ffi', '1.9.6'
+gem 'public_suffix', '1.4'
+gem 'nokogiri', '1.4'
