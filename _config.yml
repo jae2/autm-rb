@@ -1,5 +1,5 @@
 baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
-url: "http://www.jaetech.org" # the base hostname & protocol for your site.
+url: "https://www.jaetech.org" # the base hostname & protocol for your site.
 title: "James Edwards' blog"
 
 
@@ -10,13 +10,14 @@ paginate_path: /blog/page:num #makes pagination working
 #contacts
 git: "https://github.com/jae2"  #Add your github url here.
 twitter: "https://twitter.com/jam_ez_"  #Add your twitter url here.
+rss: "https://www.jaetech.org/feed.xml"  #Add your twitter url here.
 stackoverflow: ""
 
 gems:
   - jekyll-sitemap
 
 # This is used by feed.xml. Uncomment if you want to use it.
-# description: "..."
+description: "blogging about infra stuff"
 
 exclude:
   - "README.md"
