@@ -1,5 +1,5 @@
 ---
-title: "upgrading the kernel on Debian 7.8"
+title: "Upgrading the kernel on Debian 7.8"
 description: "A simple but nasty bug with extlinux-update"
 tags: 
      - linux
