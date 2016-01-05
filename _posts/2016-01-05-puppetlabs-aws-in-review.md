@@ -120,24 +120,24 @@ Some other power comes from [creating your own defined types](https://github.com
 
 **Unit-testing**  - Using puppet gives you beaker and puppet-rspec so you can test all the things!
 
-**Some Idempotency** You can discover resources and pull them into your codebase and force aws resources to be in a certain state. Cloudformation and Terraform will ignore things which are created outside of their world  (or error if it finds something which overlaps with it's configuration). 
+**Some Idempotency** - You can discover resources and pull them into your codebase and force aws resources to be in a certain state. Cloudformation and Terraform will ignore things which are created outside of their world  (or error if it finds something which overlaps with it's configuration). 
 
-**No horrible state files** Terraform uses a state file to determine what is in your infrastructure, this introduces all kinds of problems with developers working on the same codebase.
+**No horrible state files** - Terraform uses a state file to determine what is in your infrastructure, this introduces all kinds of problems with developers working on the same codebase.
 
 **Linkage into other puppet features** - e.g. PuppetDB, Puppet Reports..
 
 
 ## What's less good about puppetlabs-aws?
 
-**Very early days**. There isn't much of a community around it yet.
+**Very early days** - There isn't much of a community around it yet.
 
-**Small knowledge base** You have to be prepared to dig into the code to figure out how things work. Needs to be done a lot more than you would with other open source projects.
+**Small knowledge base** - You have to be prepared to dig into the code to figure out how things work. Needs to be done a lot more than you would with other open source projects.
 
-** Idempotency problems:** For example, if you create a resource manually in one region give it's name the tag 'a', then create the same resource in the same region give it a name tag of 'a' as well. Then in the manifest ensure the 'a' resource is absent. It's hard/impossible to determine which resource will get deleted. Therefore, the idempotency is not completely fool proof. This is mostly due to the fact most AWS resources don't have a suitable attribute that can become a namevar.
+**Idempotency problems:** - For example, if you create a resource manually in one region give it's name the tag 'a', then create the same resource in the same region give it a name tag of 'a' as well. Then in the manifest ensure the 'a' resource is absent. It's hard/impossible to determine which resource will get deleted. Therefore, the idempotency is not completely fool proof. This is mostly due to the fact most AWS resources don't have a suitable attribute that can become a namevar.
 
-**Phoenix servers** You may wish to implement the [phoenix server](http://martinfowler.com/bliki/PhoenixServer.html) pattern. One strategy for this involves attaching instances to a temporary load balancer, then moving them to a new load balancer, and destroying all instances with an old AMI in one change. Not sure how this would work in Puppetlabs-aws. If anyone has a good way of doing this with puppetlabs AWS, please let me know - I'd be interested! However, take this with a pinch of salt as I'm not convinced that tools like Terraform and puppetlabs-aws are really the right place to do those things (long story..).
+**Phoenix servers** - You may wish to implement the [phoenix server](http://martinfowler.com/bliki/PhoenixServer.html) pattern. One strategy for this involves attaching instances to a temporary load balancer, then moving them to a new load balancer, and destroying all instances with an old AMI in one change. Not sure how this would work in Puppetlabs-aws. If anyone has a good way of doing this with puppetlabs AWS, please let me know - I'd be interested! However, take this with a pinch of salt as I'm not convinced that tools like Terraform and puppetlabs-aws are really the right place to do those things (long story..).
 
-**AWS resources** Not all AWS resources are supported yet.
+**AWS resources** -  Not all AWS resources are supported yet.
 
 **Various grievences people have with the Puppet DSL** - Although using the future parser can make life a lot easiar!
 
