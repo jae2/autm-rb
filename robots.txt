@@ -1,0 +1,4 @@
+User-agent: *
+Crawl-delay:   1
+
+Sitemap: http://jaetech.org/sitemap.xml
