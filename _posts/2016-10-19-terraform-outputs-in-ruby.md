@@ -1,5 +1,5 @@
 ---
-title: "Getting Terraform outputs into Ruby Code with ruby-tfoutputs"
+title: "Terraform outputs in Ruby Code with ruby-tfoutputs"
 tags: 
      - ruby
      - terraform
