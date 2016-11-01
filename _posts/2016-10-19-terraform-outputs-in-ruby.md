@@ -41,9 +41,9 @@ puts(state_reader.my_output_name)
 {% endhighlight %}
 
 
-However, it is designed to be extensible in terms of backends. So if it'd be useful to have other things like etcd, consul and others feel free to contribute.
+However, it is designed to be extensible in terms of backends. So if it'd be useful to have other things like etcd, consul and others feel free to contribute or raise an issue.
 
 ## Is it going to be useful?
 
-I reckon most people will just wrap the terraform commandline, but if you don't want to or doing so becomes to big this might help you.
+I reckon most people will just wrap the terraform commandline, but if doing so causes a lot of spaghetti code and long shell scripts maybe this can help.
 
